@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园打卡指南</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-banner">
+        <div class="banner-content">
+            <h1 class="banner-title">🏫 校园打卡指南</h1>
+            <p class="banner-subtitle">探索校园最美角落，记录青春美好时光</p>
+            <div class="banner-stats">
+                <span class="stat-item">📍 7个打卡点</span>
+                <span class="stat-item">✨ 精选推荐</span>
+            </div>
+        </div>
+        <div class="banner-decoration"></div>
+    </header>
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">📁 分类浏览</h2>
+            <div class="category-grid">
+                <button class="category-btn active" data-category="all">
+                    <span class="category-icon">🌟</span>
+                    <span class="category-name">全部</span>
+                </button>
+                <button class="category-btn" data-category="校园地标">
+                    <span class="category-icon">🏛️</span>
+                    <span class="category-name">校园地标</span>
+                </button>
+                <button class="category-btn" data-category="自然风光">
+                    <span class="category-icon">🌿</span>
+                    <span class="category-name">自然风光</span>
+                </button>
+                <button class="category-btn" data-category="美食角落">
+                    <span class="category-icon">🍽️</span>
+                    <span class="category-name">美食角落</span>
+                </button>
+                <button class="category-btn" data-category="休闲空间">
+                    <span class="category-icon">🛋️</span>
+                    <span class="category-name">休闲空间</span>
+                </button>
+                <button class="category-btn" data-category="文艺空间">
+                    <span class="category-icon">🎭</span>
+                    <span class="category-name">文艺空间</span>
+                </button>
+                <button class="category-btn" data-category="特色体验">
+                    <span class="category-icon">🎯</span>
+                    <span class="category-name">特色体验</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="spots-section">
+        <div class="container">
+            <h2 class="section-title">🔥 热门打卡推荐</h2>
+            <div class="spots-grid" id="spotsGrid"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>🏫 校园打卡指南 - 记录青春每一刻</p>
+    </footer>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-image" id="modalImage"></div>
+            <div class="modal-info">
+                <div class="modal-header">
+                    <span class="modal-emoji" id="modalEmoji"></span>
+                    <h3 class="modal-title" id="modalTitle"></h3>
+                </div>
+                <span class="modal-category" id="modalCategory"></span>
+                <p class="modal-desc" id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
